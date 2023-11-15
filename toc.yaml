@@ -1,0 +1,33 @@
+---
+toc:
+  properties:
+    subcollection: adopt-enterprise-architecture
+    authors:
+        - name: Arn Hyndman
+          url: https://www.linkedin.com/in/arnhyndman/
+    audience: solution
+    content-type: white-paper
+    href: /docs/adopt-enterprise-architecture
+    path: adopt-enterprise-architecture
+    description: Understand how to adopt the enterprise architecture so you can reduce cost, increase scale, and improve security and compliance.
+    label: Adopting the enterprise architecture
+
+  entries:
+  - navgroup:
+      id: overview
+      topics:
+      - understand.md
+
+  - navgroup:
+      id: plan
+      topics:
+        - assess.md
+        - strategy.md
+        - risks.md
+
+  - navgroup:
+      id: howto
+      topics:
+        - prep.md
+        - execute.md
+        - evaluate.md

@@ -1,2 +1,2 @@
-# migrate-enterprise-account-architecture
-Documentation repository for migrate-enterprise-account-architecture
+# adopt-enterprise-architecture
+Documentation repository for the adopt-enterprise-architecture white paper
