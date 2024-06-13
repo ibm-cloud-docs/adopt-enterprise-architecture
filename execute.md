@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023
-lastupdated: "2023-11-15"
+lastupdated: "2023-11-03"
 
 subcollection: adopt-enterprise-architecture
 

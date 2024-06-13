@@ -11,20 +11,17 @@ toc:
     path: adopt-enterprise-architecture
     description: Understand how to adopt the enterprise architecture so you can reduce cost, increase scale, and improve security and compliance.
     label: Adopting the enterprise architecture
-
   entries:
   - navgroup:
       id: overview
       topics:
       - understand.md
-
   - navgroup:
       id: plan
       topics:
         - assess.md
         - strategy.md
         - risks.md
-
   - navgroup:
       id: howto
       topics:
