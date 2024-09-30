@@ -109,7 +109,7 @@ Each strategy has more details, including pros and cons.
 
 To help with selecting technical strategies, the following decision tree can be used as a guide:
 
-![decision tree](./images/decision-tree.svg){: caption="Figure 1. Technical strategy decision tree" caption-side="bottom"}
+![decision tree](./images/decision-tree.svg){: caption="Figure 2. Technical strategy decision tree" caption-side="bottom"}
 
 Keep in mind that any decision tree incorporates only a few key criteria, so be sure to read up on the details of each strategy before adopting.
 
@@ -195,7 +195,7 @@ Implement one or more of the technical strategies to adopt the enterprise archit
 
 With this strategy, a single application or family of related applications is migrated to a set of workload accounts, which exist in parallel with the existing infrastructure for the application. After the migration is complete, unused infrastructure in the original accounts can be decommissioned.
 
-![app-by-app diagram](./images/app-by-app.svg){: caption="Figure 1. App by app migration" caption-side="bottom"}
+![app-by-app diagram](./images/app-by-app.svg){: caption="Figure 3. App by app migration" caption-side="bottom"}
 
 1. Select a workload for migration and add related resources to a project in preparation for tracking resources during migration.
 1. Update the workload as needed to make it configurable and able to run in all locations. These updates might involve code changes to parameterize hostnames, URLs, IP addresses, and ports.
@@ -214,7 +214,7 @@ This strategy is low risk and gains all of the cost and operation savings that a
 
 With this strategy, [nonproduction workloads](/docs/enterprise-account-architecture?topic=enterprise-account-architecture-infra-account) are moved into separate workload accounts.
 
-![piecemeal migration of nonproduction resources](./images/piecemeal-nonprod.svg){: caption="Figure 2. Piecemeal migration of nonproduction resources" caption-side="bottom"}
+![piecemeal migration of nonproduction resources](./images/piecemeal-nonprod.svg){: caption="Figure 4. Piecemeal migration of nonproduction resources" caption-side="bottom"}
 
 Options:
 * Use the same process as [app by app migration](#app-by-app-migration), but migrate only nonproduction workloads.  Because nonproduction workloads don't typically have critical data, it might not be necessary to migrate data and even if it is, a period of downtime during the migration can often be much easier to manage.
@@ -226,7 +226,7 @@ Migrating nonproduction workloads into a separate account from production worklo
 ### Piecemeal migration (networking and shared services)
 {: #piecemeal-network}
 
-![piecemeal migration of network and shared services](./images/piecemeal-network.svg){: caption="Figure 3. Piecemeal migration of network and shared services" caption-side="bottom"}
+![piecemeal migration of network and shared services](./images/piecemeal-network.svg){: caption="Figure 5. Piecemeal migration of network and shared services" caption-side="bottom"}
 
 With this strategy, [networking and shared services](/docs/enterprise-account-architecture?topic=enterprise-account-architecture-hub-account) are set up in a new account and then linked to existing workload accounts, which creates a hybrid architecture. This strategy works well with [piecemeal migration of nonproduction](#piecemeal-migration-non-production) and isn't required when using [app-by-app migration](#app-by-app-migration) as a duplicate set of these services can be used instead.
 
@@ -263,7 +263,7 @@ Do not migrate existing access directly into the new architecture, as best pract
 ### New applications only
 {: #new}
 
-![new applications only diagram](./images/new-only.svg){: caption="Figure 4. New applications" caption-side="bottom"}
+![new applications only diagram](./images/new-only.svg){: caption="Figure 6. New applications" caption-side="bottom"}
 
 This strategy doesn't attempt to transition existing applications. Rather, it builds out parallel infrastructure for the workload accounts and deploys new applications into that environment. This strategy can be combined with a [transform in place](#transform-in-place), and potentially some piecemeal migration of major common functions like networking and access management.
 
@@ -278,7 +278,7 @@ This strategy is safe and easy, but does not attempt to address existing applica
 
 With this strategy, data migrations are avoided and existing accounts and resources are refactored to better align with enterprise architecture recommendations. Certain common operations need to be considered, but the exact refactoring operations depend on your enterprise's starting point, resulting in various substrategies.
 
-![transform in place diagram](./images/transform-in-place.svg){: caption="Figure 5. Transform in place" caption-side="bottom"}
+![transform in place diagram](./images/transform-in-place.svg){: caption="Figure 7. Transform in place" caption-side="bottom"}
 
 *[Adopt Infrastructure as Code](/docs/enterprise-account-architecture?topic=enterprise-account-architecture-principles)*
 
@@ -335,7 +335,7 @@ This strategy provides most of the network simplification benefits that are desc
 
 The hybrid strategy leaves your existing databases and data services in place, while you migrate applications and nondata services into the new architecture:
 
-![hybrid strategy diagram](./images/hybrid.svg){: caption="Figure 6. Hybrid strategy" caption-side="bottom"}
+![hybrid strategy diagram](./images/hybrid.svg){: caption="Figure 8. Hybrid strategy" caption-side="bottom"}
 
 1. Leave databases and other data services in place, adjusting only access permissions to align with enterprise architecture recommendations.
 1. Migrate the applications and nondata services into the enterprise architecture structure by following any of the strategies that are outlined in this white paper. The [App by App](#app-app) strategy is recommended.
