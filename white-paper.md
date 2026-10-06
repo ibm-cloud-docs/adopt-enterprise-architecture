@@ -171,8 +171,8 @@ Before you apply one of the technical strategies, it can be useful to become fam
 * Database sync across accounts:
    * [{{site.data.keyword.cloudant}}](/docs/Cloudant?topic=Cloudant-replication-guide)
    * [{{site.data.keyword.cos_full_notm}}](/docs/cloud-object-storage?topic=cloud-object-storage-rclone)
-   * [{{site.data.keyword.databases-for-mongodb}}](https://www.ibm.com/cloud/blog/easier-migrations-from-compose-for-mongodb-to-ibm-cloud-databases){: external}
-   * [{{site.data.keyword.databases-for-postgresql}}](https://www.ibm.com/cloud/blog/upgrading-ibm-cloud-databases-for-postgresql-with-minimal-downtime){: external}
+   * [{{site.data.keyword.databases-for-mongodb}}](/docs/databases-for-mongodb)
+   * [{{site.data.keyword.databases-for-postgresql}}](/docs/databases-for-postgresql)
    * [{{site.data.keyword.messagehub}}](/docs/EventStreams?topic=EventStreams-mirroring)
    * [{{site.data.keyword.databases-for-elasticsearch}}](/docs/databases-for-elasticsearch?topic=databases-for-elasticsearch-esmigration-elasticsearch-snapshot-restore)
    * [{{site.data.keyword.databases-for-redis}}](/docs/databases-for-redis?topic=databases-for-redis-upgrading&interface=ui#upgrading-req-data-migration)
